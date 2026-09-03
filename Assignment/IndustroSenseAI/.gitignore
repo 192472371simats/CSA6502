@@ -1,0 +1,31 @@
+# Environment / secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# Vector DB artifacts (rebuild via ingest.py)
+vector_db/*.bin
+vector_db/*.json
+!vector_db/.gitkeep
+
+# Logs
+logs/*.jsonl
+!logs/.gitkeep
+
+# Evaluation outputs
+outputs/*.csv
+outputs/*.png
+!outputs/.gitkeep
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
